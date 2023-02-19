@@ -22,6 +22,13 @@ public class Kata
 		var newSentence = string.Join(" ", elements);//forget about string join.
 		Console.WriteLine(newSentence);
 		return newSentence;
-
 	}
+
+	//alternative:
+	//var newSentence = string.Join(" ",
+	//	sentence.Split(" ")
+	//		.ToList()
+	//		.Select(x => x.Length >= 5 ? string.Join("", x.Reverse()) : x));// use select instead of foreach, because you create a new one instance.
+	//Console.WriteLine(newSentence);
+	//return newSentence;
 }
